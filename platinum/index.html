@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ФИЗКУЛЬТУРА PLATINUM</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#090a0d;color:#eee;font-family:Arial,sans-serif}
+main{max-width:480px;margin:auto;padding:30px 20px 90px}
+header{text-align:center;padding:35px 0}
+h1{font-size:26px;letter-spacing:3px;margin:0}
+.platinum{color:#bfc5ce;letter-spacing:7px;margin-top:12px}
+.subtitle{color:#888;margin-top:18px;font-size:13px}
+h2{font-size:21px;margin-top:35px}
+.card{background:linear-gradient(145deg,#242830,#111318);border:1px solid #414650;border-radius:18px;padding:24px;margin:15px 0}
+.card h3{margin:0 0 10px}
+.card p{color:#aeb4bd;font-size:14px}
+button{width:100%;padding:15px;border:0;border-radius:10px;background:linear-gradient(120deg,#929aa6,#e3e6eb,#929aa6);color:#111;font-weight:bold;font-size:14px;cursor:pointer}
+.price{font-size:22px;font-weight:bold;color:#e2e5ea}
+footer{text-align:center;color:#777;font-size:11px;margin-top:40px}
+</style>
+</head>
+<body>
+<main>
+<header>
+<h1>ФИЗКУЛЬТУРА</h1>
+<div class="platinum">PLATINUM</div>
+<p class="subtitle">ТВОЯ СИЛА. ТВОИ ПРАВИЛА.</p>
+</header>
+<h2>Тренировки</h2>
+<div class="card">
+<h3>Бесплатная тренировка</h3>
+<p>Начни сегодня. Без оборудования и оправданий.</p>
+<button onclick="location.href='https://t.me/FIZKYLTYRA11/2'">СМОТРЕТЬ</button>
+</div>
+<div class="card">
+<h3>Грудь и трицепс</h3>
+<p>Силовой комплекс для верхней части тела.</p>
+<div class="price">300 ₽</div>
+</div>
+<div class="card">
+<h3>Бокс и выносливость</h3>
+<p>Пять раундов интенсивной работы.</p>
+<div class="price">300 ₽</div>
+</div>
+<h2>PLATINUM PRO</h2>
+<div class="card">
+<h3>Полный доступ</h3>
+<p>Все программы тренировок в одном месте.</p>
+<div class="price">1000 ₽ / месяц</div>
+<p>Оплату подключим позже.</p>
+</div>
+<footer>ФИЗКУЛЬТУРА © 2026</footer>
+</main>
+</body>
+</html>
+<style>
+html{scroll-behavior:smooth}
+body{background:radial-gradient(ellipse at 50% 0%,#292e37 0%,#101217 48%,#08090c 100%);min-height:100vh}
+header{border-bottom:1px solid #343943;margin-bottom:30px}
+h1{background:linear-gradient(110deg,#858d99,#fff,#a3aab5);-webkit-background-clip:text;background-clip:text;color:transparent}
+.card{box-shadow:0 12px 35px #0005;transition:transform .25s,border-color .25s}
+.card:hover{transform:translateY(-3px);border-color:#b9c1cd}
+.price{margin:15px 0}
+nav{position:fixed;bottom:0;left:0;right:0;background:#111318ed;border-top:1px solid #434954;display:flex;justify-content:center;gap:25px;padding:17px 10px;z-index:10}
+nav a{color:#cbd0d8;text-decoration:none;font-size:12px;font-weight:bold}
+nav a:hover{color:white}
+</style>
+<nav>
+<a href="#">ГЛАВНАЯ</a>
+<a href="#workouts">ТРЕНИРОВКИ</a>
+<a href="#pro">PLATINUM PRO</a>
+</nav>
+<script>
+document.querySelector('h2').id='workouts';
+document.querySelectorAll('h2')[1].id='pro';
+</script>
+<style>
+.card{position:relative;overflow:hidden}
+.card:before{content:"";position:absolute;top:0;left:15%;width:70%;height:1px;background:linear-gradient(90deg,transparent,#c7ced9,transparent)}
+.card button{margin-top:12px}
+.action{display:block;text-align:center;text-decoration:none;background:linear-gradient(110deg,#89929f,#e4e8ed,#89929f);color:#101217;border-radius:10px;padding:15px;font-weight:bold;font-size:13px;margin-top:18px}
+.tag{font-size:10px;letter-spacing:2px;color:#b7c0cc;margin-bottom:12px}
+</style>
+<script>
+const cards=document.querySelectorAll('.card');
+const names=['БЕСПЛАТНЫЙ ДОСТУП','СИЛОВАЯ ПРОГРАММА','БОКС / КАРДИО','VIP ДОСТУП'];
+cards.forEach((card,i)=>{
+ const tag=document.createElement('div');
+ tag.className='tag';
+ tag.textContent=names[i]||'ТРЕНИРОВКА';
+ card.prepend(tag);
+ if(i>0){
+ const a=document.createElement('a');
+ a.className='action';
+ a.href='#';
+ a.textContent=i===3?'ОФОРМИТЬ ПОДПИСКУ':'ПОДРОБНЕЕ';
+ a.onclick=e=>{e.preventDefault();alert('Скоро здесь появится подробная информация и оплата.')};
+ card.append(a);
+ }
+});
+</script>

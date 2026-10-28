@@ -1,0 +1,75 @@
+.card .btn,
+.card button.btn,
+.card a.btn {
+  display: block !important;
+  box-sizing: border-box !important;
+  width: 100% !important;
+  margin-top: 16px !important;
+  padding: 15px 18px !important;
+  border: 0 !important;
+  border-radius: 12px !important;
+  background: linear-gradient(110deg,#a9adb5,#f0eee8,#a9adb5) !important;
+  color: #17191d !important;
+  font-size: 12px !important;
+  font-weight: 800 !important;
+  letter-spacing: 2px !important;
+  text-align: center !important;
+  text-decoration: none !important;
+  cursor: pointer !important;
+  position: relative !important;
+  z-index: 5 !important;
+}
+
+/* PLATINUM PREMIUM BUTTONS */
+.card .btn,
+.card button.btn,
+.card a.btn {
+  background: linear-gradient(
+    115deg,
+    #747d8a 0%,
+    #c5ccd5 28%,
+    #f5f7fa 50%,
+    #a9b2bf 75%,
+    #6c7582 100%
+  ) !important;
+
+  color: #11151c !important;
+  border: 1px solid rgba(255,255,255,.55) !important;
+  border-radius: 14px !important;
+  padding: 17px 20px !important;
+
+  box-shadow:
+    0 5px 20px rgba(0,0,0,.35),
+    inset 0 1px 1px rgba(255,255,255,.75) !important;
+
+  transition:
+    transform .3s ease,
+    box-shadow .3s ease,
+    filter .3s ease !important;
+}
+
+.card .btn:hover,
+.card button.btn:hover,
+.card a.btn:hover {
+  transform: translateY(-4px) scale(1.025) !important;
+  filter: brightness(1.15) !important;
+
+  box-shadow:
+    0 12px 32px rgba(195,210,235,.35),
+    0 0 22px rgba(220,230,255,.25),
+    inset 0 1px 2px #ffffff !important;
+}
+
+.card .btn:active,
+.card button.btn:active,
+.card a.btn:active {
+  transform: scale(.97) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card .btn,
+  .card button.btn,
+  .card a.btn {
+    transition: none !important;
+  }
+}

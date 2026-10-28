@@ -1,0 +1,43 @@
+/* PLATINUM CARD TYPOGRAPHY */
+
+.card {
+  overflow: hidden;
+}
+
+.card .body {
+  padding: 22px 24px 24px !important;
+}
+
+.card .tag {
+  color: #b8c0cc !important;
+  font-size: 10px !important;
+  font-weight: 700 !important;
+  letter-spacing: 2px !important;
+  line-height: 1.6 !important;
+  margin-bottom: 12px !important;
+}
+
+.card h3 {
+  color: #f5f3ef !important;
+  font-size: 24px !important;
+  font-weight: 850 !important;
+  letter-spacing: -.6px !important;
+  line-height: 1.15 !important;
+  margin: 0 0 12px !important;
+}
+
+.card .desc {
+  color: #c0c5ce !important;
+  font-size: 13px !important;
+  font-weight: 400 !important;
+  line-height: 1.65 !important;
+  margin-bottom: 18px !important;
+}
+
+.card .price {
+  color: #f4f1eb !important;
+  font-size: 25px !important;
+  font-weight: 800 !important;
+  letter-spacing: -.5px !important;
+  margin-bottom: 16px !important;
+}

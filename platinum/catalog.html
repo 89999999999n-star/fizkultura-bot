@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#090b0f">
+<title>ФИЗКУЛЬТУРА PLATINUM</title>
+<style>
+:root{--bg:#090b0f;--silver:#d8dee7;--muted:#939daa}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:#f3f4f6;font-family:-apple-system,BlinkMacSystemFont,Arial,sans-serif}
+body:before{content:"";position:fixed;inset:0;background:radial-gradient(ellipse at 70% 0%,#2c344055,transparent 55%);pointer-events:none}
+main{position:relative;max-width:520px;margin:auto;padding:0 18px 110px}
+header{display:flex;align-items:center;justify-content:space-between;padding:25px 0;border-bottom:1px solid #ffffff18}
+.brand{font-size:12px;font-weight:900;letter-spacing:2px}
+.brand span{color:#aeb8c5}
+.pill{font-size:9px;letter-spacing:2px;border:1px solid #76808e;border-radius:30px;padding:8px 11px;color:#dce1e8}
+.hero{padding:49px 0 36px}
+.eyebrow{font-size:10px;letter-spacing:3px;color:#b8c2cf;font-weight:800}
+h1{font-size:clamp(43px,10vw,60px);letter-spacing:-2.5px;line-height:.99;margin:20px 0}
+h1 span{color:#aab5c3}
+.hero p{color:#a5aeba;font-size:14px;line-height:1.7;max-width:340px}
+.primary{display:block;width:100%;border:0;border-radius:11px;padding:16px 18px;text-align:center;text-decoration:none;color:#101319;background:linear-gradient(115deg,#8b97a7,#eef1f5 48%,#9ba6b5);font-size:12px;font-weight:900;letter-spacing:1.3px;cursor:pointer}
+.hero .primary{margin-top:26px;max-width:270px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:42px}
+.stat{border-top:1px solid #5c6571;padding-top:13px}
+.stat strong{display:block;font-size:21px}
+.stat small{font-size:9px;color:#8e99a7;letter-spacing:1px}
+.section-head{display:flex;align-items:center;justify-content:space-between;margin:0 0 20px}
+h2{font-size:21px;letter-spacing:-.5px;margin:0}
+.count{font-size:10px;color:#99a3b0;letter-spacing:1px}
+.filters{display:flex;gap:8px;overflow:auto;padding:0 0 18px;scrollbar-width:none}
+.filters::-webkit-scrollbar{display:none}
+.filter{flex:none;border:1px solid #38414d;background:#171b21;color:#b3beca;padding:10px 15px;border-radius:30px;font-size:11px;cursor:pointer}
+.filter.active{background:#dbe0e7;color:#11151a;border-color:#dbe0e7;font-weight:800}
+.card{overflow:hidden;border:1px solid #343c47;border-radius:19px;margin-bottom:18px;background:linear-gradient(145deg,#222832,#111419)}
+.visual{height:220px;position:relative;overflow:hidden;background:#222831}
+.visual img{width:100%;height:100%;object-fit:cover;filter:grayscale(1) brightness(.72) contrast(1.16)}
+.visual:after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,#111419 0%,transparent 68%)}
+.visual-text{position:absolute;bottom:17px;left:20px;right:20px;z-index:1}
+.visual-text small{font-size:10px;letter-spacing:2px;color:#d3dbe5}
+.visual-text h3{font-size:27px;line-height:1.05;letter-spacing:-.7px;margin:9px 0 0}
+.card-body{padding:7px 20px 20px}
+.card-body p{font-size:13px;line-height:1.65;color:#a6b0bd;min-height:38px}
+.card-bottom{display:flex;align-items:center;justify-content:space-between;margin:18px 0}
+.price{font-size:23px;font-weight:900}
+.duration{font-size:11px;color:#9ba5b2}
+.card .primary{padding:15px}
+.pro{margin:42px 0 20px;border:1px solid #8793a3;border-radius:20px;padding:29px 23px;background:linear-gradient(135deg,#343e4c,#171c23 65%,#0d1015)}
+.pro h2{font-size:36px;line-height:1;margin:17px 0}
+.pro p{font-size:13px;line-height:1.8;color:#b4bfcb}
+.pro-price{font-size:30px;font-weight:900;margin:22px 0}
+.pro-price small{font-size:13px;color:#b8c2cf;font-weight:400}
+.benefit{padding:12px 0;border-bottom:1px solid #ffffff20;font-size:12px;color:#e0e5ec}
+.note{text-align:center;color:#818b98;font-size:11px;line-height:1.6;margin:25px 0}
+.
+
+</style>
+<link rel="stylesheet" href="photos.css">
+<link rel="stylesheet" href="buttons_fix.css">
+<link rel="stylesheet" href="card_text.css">
+<link rel="stylesheet" href="premium_finish.css">
+</head>
+<body>
+<main class="wrap">
+<div class="brand">ФИЗКУЛЬТУРА / PLATINUM</div>
+<div class="eyebrow">ТРЕНИРУЙСЯ ПО СВОИМ ПРАВИЛАМ</div>
+<h1>СИЛА.<br>ХАРАКТЕР.<br>РЕЗУЛЬТАТ.</h1>
+<p class="intro">Тренировки для дома, улицы и зала.</p>
+<div class="line"></div>
+<h2>КАТАЛОГ ТРЕНИРОВОК</h2>
+
+<article class="card">
+<div class="visual v1"></div>
+<div class="body">
+<div class="tag">01 / БЕСПЛАТНО</div>
+<h3>СТАРТ</h3>
+<div class="price">0 ₽</div>
+<button class="btn" onclick="alert('Раздел готовится')">ПОДРОБНЕЕ</button>
+</div>
+</article>
+
+<article class="card">
+<div class="visual v2"></div>
+<div class="body">
+<div class="tag">02 / СИЛОВАЯ</div>
+<h3>ГРУДЬ + ТРИЦЕПС</h3>
+<div class="price">300 ₽</div>
+<button class="btn" onclick="alert('Раздел готовится')">ПОДРОБНЕЕ</button>
+</div>
+</article>
+
+<article class="card">
+<div class="visual v3"></div>
+<div class="body">
+<div class="tag">03 / КАРДИО</div>
+<h3>БОКС + КАРДИО</h3>
+<div class="price">300 ₽</div>
+<button class="btn" onclick="alert('Раздел готовится')">ПОДРОБНЕЕ</button>
+</div>
+</article>
+
+<article class="card">
+<div class="visual v4"></div>
+<div class="body">
+<div class="tag">04 / VIP</div>
+<h3>PLATINUM PRO</h3>
+<div class="price">1 000 ₽ / мес.</div>
+<button class="btn" onclick="alert('Раздел готовится')">ПОДРОБНЕЕ</button>
+</div>
+</article>
+
+</main>
+<footer>ФИЗКУЛЬТУРА · PLATINUM</footer>
+
+<script>
+function demo() {
+  alert('Раздел готовится. Скоро здесь появятся подробности тренировки и оплата.');
+}
+</script>
+
+</body>
+</html>
